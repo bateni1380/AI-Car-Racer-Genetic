@@ -4,6 +4,25 @@ This is a car racing game written by python and pygame along with some controlle
 
 # Code Overview
 
+## Summery of main.py
+1. Imports: The code imports necessary modules and classes from different files for the game simulation and genetic algorithms.
+
+2. Game Elements: Walls and checkpoints for the game are defined based on predefined map data.
+
+3. Initializing Cars: A set number of cars are initialized on the screen. Each car starts with certain properties like position, speed, size, heading, and rotation speed.
+
+4. Genetic Model Initialization: The genetic algorithm model is set up by defining two functions: one for crossover (mixing genetic information of two genes) and one for mutation (making small changes to a gene).
+
+5. Initializing Pygame: The Pygame library is initialized, and the screen dimensions and title and camera details are set in an ScreenPars object.
+
+6. Game Loop: The main game loop starts, where the game events are handled. Inside the loop:
+
+    The behaviors of the cars are updated, including their actions and responses.
+    For each car, its movement, stage update, and sensor data are managed.
+    If all cars are "dead" (unable to move), the genetic algorithm is used to evolve the population. The best-performing genes are selected for the next generation, and some crossover and mutation are applied to generate new genes.
+    The screen is refreshed, showing the game's current state.
+
+
 ## Classes and methods of Components.py
 ```python
 class ScreenPars:
@@ -65,23 +84,6 @@ class CarNet(nn.Module):
     def to_list(self):  # Concatinates the weights of all layers to a single list (to send it to genetic model)
     def update_from_list(self, l):  # Updates the model's weights from a provided list
 ```
-## Summery of main.py
-1. Imports: The code imports necessary modules and classes from different files for the game simulation and genetic algorithms.
-
-2. Game Elements: Walls and checkpoints for the game are defined based on predefined map data.
-
-3. Initializing Cars: A set number of cars are initialized on the screen. Each car starts with certain properties like position, speed, size, heading, and rotation speed.
-
-4. Genetic Model Initialization: The genetic algorithm model is set up by defining two functions: one for crossover (mixing genetic information of two genes) and one for mutation (making small changes to a gene).
-
-5. Initializing Pygame: The Pygame library is initialized, and the screen dimensions and title and camera details are set in an ScreenPars object.
-
-6. Game Loop: The main game loop starts, where the game events are handled. Inside the loop:
-
-    The behaviors of the cars are updated, including their actions and responses.
-    For each car, its movement, stage update, and sensor data are managed.
-    If all cars are "dead" (unable to move), the genetic algorithm is used to evolve the population. The best-performing genes are selected for the next generation, and some crossover and mutation are applied to generate new genes.
-    The screen is refreshed, showing the game's current state.
 
 
 Video Link : https://github.com/bateni1380/AI-Car-Racer-Genetic/blob/main/demo.mp4
