@@ -3,9 +3,9 @@ This is a car racing game written by python and pygame along with some controlle
 ![](https://github.com/bateni1380/AI-Car-Racer-Genetic/blob/main/Capture.PNG)
 
 # Code Overview
-```python
-# Classes and methods of Components.py
 
+## lasses and methods of Components.py
+```python
 class ScreenPars:
     def __init__(self, screen, screen_dim, camera_position, dest_camera_position)
     def move_camera(self)  # Moves the camera gradually from camera_position to dest_camera_position
@@ -39,10 +39,8 @@ class Car:
     def collide(self, wall: Line)  # Checks collision with a wall
 ```
 
-
+## lasses and methods of GeneticModel.py
 ```python
-# Classes and methods of GeneticModel.py
-
 class Gene:
     def __init__(self, values: list, objective_val: float)  # Initializes a gene with values and an objective value
     def copy(self)  # Creates a copy of the gene
@@ -59,9 +57,8 @@ class GeneticAlgorithmModel:
 
 ```
 
+## lasses and methods of CarNet.py
 ```python
-# Classes and methods of CarNet.py
-
 class CarNet(nn.Module):
     def __init__(self, input_size, hidden_size, output_size):  # Initializes a neural network model for a car
     def forward(self, x):  # Implements the forward pass of the neural network
