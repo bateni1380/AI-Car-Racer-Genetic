@@ -31,16 +31,16 @@ An screenshot of the game!
 ```python
 class ScreenPars:
     def __init__(self, screen, screen_dim, camera_position, dest_camera_position) pass
-    def move_camera(self)  # Moves the camera gradually from camera_position to dest_camera_position
+    def move_camera(self) pass  # Moves the camera gradually from camera_position to dest_camera_position
 
 class Point:
-    def __init__(self, x, y, color)
-    def distance(self, other_point)  # Calculates Euclidean distance to another point
-    def draw(self, screen_pars)  # Draws the point on the screen
-    def draw_cross(self, screen_pars)  # Draws a cross centered at the point
-    def to_np(self)  # Converts the point to a NumPy array
-    def update_from_np(self, array)  # Updates point coordinates from a NumPy array
-    def copy(self)  # Creates a copy of the point
+    def __init__(self, x, y, color) pass
+    def distance(self, other_point) pass # Calculates Euclidean distance to another point
+    def draw(self, screen_pars) pass # Draws the point on the screen
+    def draw_cross(self, screen_pars) pass # Draws a cross centered at the point
+    def to_np(self) pass # Converts the point to a NumPy array
+    def update_from_np(self, array) pass # Updates point coordinates from a NumPy array
+    def copy(self) pass # Creates a copy of the point
 
 class Line:
     def __init__(self, p1: Point, p2: Point, color, diameter)
