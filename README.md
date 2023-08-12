@@ -3,9 +3,7 @@ This is a car racing game written by python and pygame along with some controlle
 
 
 # Code Overview
-
 [![Video Thumbnail](https://github.com/bateni1380/AI-Car-Racer-Genetic/blob/main/Capture.PNG)](https://github.com/bateni1380/AI-Car-Racer-Genetic/blob/main/demo.mp4)
-
 An screenshot of the game!
 ## Summery of main.py
 1. Imports: The code imports necessary modules and classes from different files for the game simulation and genetic algorithms.
