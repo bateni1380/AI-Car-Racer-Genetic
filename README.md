@@ -1,9 +1,9 @@
 # AI-Car-Racer-Genetic
 This is a car racing game written by python and pygame along with some controllers for each car which can be controlled by user or an AI!
-![](https://github.com/bateni1380/AI-Car-Racer-Genetic/blob/main/Capture.PNG)
+
 
 # Code Overview
-
+![](https://github.com/bateni1380/AI-Car-Racer-Genetic/blob/main/Capture.PNG)
 ## Summery of main.py
 1. Imports: The code imports necessary modules and classes from different files for the game simulation and genetic algorithms.
 
