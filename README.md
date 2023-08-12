@@ -5,7 +5,6 @@ This is a car racing game written by python and pygame along with some controlle
 # Code Overview
 ```python
 # Classes and methods of Components.py
-# Classes and methods of Components.py
 
 class ScreenPars:
     def __init__(self, screen, screen_dim, camera_position, dest_camera_position)
@@ -38,10 +37,36 @@ class Car:
     def move(self)  # Moves the car based on its current state and speed
     def draw(self, screen_pars)  # Draws the car on the screen
     def collide(self, wall: Line)  # Checks collision with a wall
+```
 
 
+```python
+# Classes and methods of GeneticModel.py
 
+class Gene:
+    def __init__(self, values: list, objective_val: float)  # Initializes a gene with values and an objective value
+    def copy(self)  # Creates a copy of the gene
 
+class GeneticAlgorithmModel:
+    def __init__(self, metrics=[])  # Initializes a genetic algorithm model with optional metrics (what to print each itteration)
+    def compile(self, crossover_fun, mutation_fun, initial_population_fun, crossover_coeff, mutation_coeff)  # Sets up the model some necessary functions 
+    def __choose_weighted(self, k)  # Chooses genes from the population using weighted probability based on their objectives
+    def __choose_best(self, k)  # Chooses the best-performing genes from the population
+    def extend(self, genes)  # Extends the population with provided genes
+    def remove(self, gene)  # Removes a gene from the population
+    def __print_on_epoch(self, epoch, metrics)  # Prints information about the current epoch based on metrics
+    def step(self)  # Advances the genetic algorithm by one iteration
+
+```
+
+```python
+# Classes and methods of CarNet.py
+
+class CarNet(nn.Module):
+    def __init__(self, input_size, hidden_size, output_size):  # Initializes a neural network model for a car
+    def forward(self, x):  # Implements the forward pass of the neural network
+    def to_list(self):  # Concatinates the weights of all layers to a single list (to send it to genetic model)
+    def update_from_list(self, l):  # Updates the model's weights from a provided list
 ```
 
 Video Link : https://github.com/bateni1380/AI-Car-Racer-Genetic/blob/main/demo.mp4
