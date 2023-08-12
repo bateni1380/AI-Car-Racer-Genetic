@@ -17,10 +17,13 @@ This is a car racing game written by python and pygame along with some controlle
 
 6. Game Loop: The main game loop starts, where the game events are handled. Inside the loop:
 
-    The behaviors of the cars are updated, including their actions and responses.
-    For each car, its movement, stage update, and sensor data are managed.
-    If all cars are "dead" (unable to move), the genetic algorithm is used to evolve the population. The best-performing genes are selected for the next generation, and some crossover and mutation are applied to generate new genes.
-    The screen is refreshed, showing the game's current state.
+   . The behaviors of the cars are updated, including their actions and responses.
+
+   . For each car, its movement, stage update, and sensor data are managed.
+
+   . If all cars are "dead" (unable to move), the genetic algorithm is used to evolve the population. The best-performing genes are selected for the next generation, and some crossover and mutation are applied to generate new genes.
+
+    . The screen is refreshed, showing the game's current state.
 
 
 ## Classes and methods of Components.py
