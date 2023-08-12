@@ -4,7 +4,7 @@ This is a car racing game written by python and pygame along with some controlle
 
 # Code Overview
 
-## lasses and methods of Components.py
+## Classes and methods of Components.py
 ```python
 class ScreenPars:
     def __init__(self, screen, screen_dim, camera_position, dest_camera_position)
@@ -39,7 +39,7 @@ class Car:
     def collide(self, wall: Line)  # Checks collision with a wall
 ```
 
-## lasses and methods of GeneticModel.py
+## Classes and methods of GeneticModel.py
 ```python
 class Gene:
     def __init__(self, values: list, objective_val: float)  # Initializes a gene with values and an objective value
@@ -57,7 +57,7 @@ class GeneticAlgorithmModel:
 
 ```
 
-## lasses and methods of CarNet.py
+## Classes and methods of CarNet.py
 ```python
 class CarNet(nn.Module):
     def __init__(self, input_size, hidden_size, output_size):  # Initializes a neural network model for a car
