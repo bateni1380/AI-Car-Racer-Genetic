@@ -10,7 +10,7 @@ An screenshot of the game!
 
 2. Game Elements: Walls and checkpoints for the game are defined based on predefined map data.
 
-3. Initializing Cars: A set number of cars are initialized on the screen. Each car starts with certain properties like position, speed, size, heading, and rotation speed. The cars nueral networks with random weghts and biases are also being initialized here.
+3. Initializing Cars: A set number of cars are initialized on the screen. Each car starts with certain properties like position, speed, size, heading, and rotation speed. The cars nueral networks with random weights and biases are also being initialized here.
 
 4. Genetic Model Initialization: The genetic algorithm model is set up by defining two functions: one for crossover (mixing genetic information of two genes) and one for mutation (making small changes to a gene).
 
