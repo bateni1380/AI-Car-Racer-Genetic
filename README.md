@@ -30,7 +30,7 @@ An screenshot of the game!
 ## Classes and methods of Components.py
 ```python
 class ScreenPars:
-    def __init__(self, screen, screen_dim, camera_position, dest_camera_position)
+    def __init__(self, screen, screen_dim, camera_position, dest_camera_position) pass
     def move_camera(self)  # Moves the camera gradually from camera_position to dest_camera_position
 
 class Point:
